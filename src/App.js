@@ -1,11 +1,11 @@
-import React from "react"
-import Card from "./components/Card"
+import React from 'react'
+import Card from './components/Card'
+import Heading from './components/Heading'
 
 export function App() {
     return (
-        <div>
-            <h1>Hello there</h1>
-            <h1> Welcome {new Date().toString()}</h1>
+        <div className="wrapper">
+            <Heading />
             <Card />
         </div>
     )

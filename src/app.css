@@ -18,8 +18,8 @@
             focus:ring-opacity-75;
     },
     .background {
+        background-color: #6495ED;
         @apply 
-            bg-gray-300 
             grid 
             grid-cols-4
             gap-4
@@ -35,6 +35,21 @@
     .text {
         @apply
             text-black
+        },
+    .background {
+        border: 2px solid black;
+        background-color: #6495ED;
+        
         }
+    .heading {
+        font-family: 'Mountains of Christmas', cursive;
+        text-align: center;
+        font-size: 56px;
+    }
+    .wrapper{
+        width: 100%;
+        border: 2px solid black;
+        background-color: #6495ED;
+    }
 }
 

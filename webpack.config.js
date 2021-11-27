@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
     output: {
@@ -15,15 +15,15 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader'
-                }
+                    loader: 'babel-loader',
+                    presets: [babelPreset],
+                    babelrc: babelrcExists,
+                },
             },
             {
                 test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
-            }
-        ]
-    }
-
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
 }
-
