@@ -3,53 +3,43 @@
 @tailwind utilities;
 
 @layer components {
-    .btn {
-        @apply 
-            py-2 
-            px-4 bg-blue-500 
-            text-white 
-            font-semibold 
-            rounded-lg 
-            shadow-md 
-            hover:bg-blue-700 
-            focus:outline-none 
-            focus:ring-2 
-            focus:ring-blue-400 
-            focus:ring-opacity-75;
-    },
+    .wrapper{
+        width: 100%;
+        border: 2px solid black;
+        background-image: url("./assets/Christmas.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .background {
-        background-color: #6495ED;
         @apply 
             grid 
-            grid-cols-4
+            grid-cols-1
             gap-4
             p-10
+            max-w-6xl
+            justify-center
+            md:grid-cols-2
+            lg:grid-cols-4
         },
     .card {
-        @apply 
-            bg-white 
+        @apply
             p-10 
             rounded-lg 
             shadow-md
-        }
-    .text {
-        @apply
-            text-black
-        },
-    .background {
-        border: 2px solid black;
-        background-color: #6495ED;
-        
+            opacity-80
+            bg-yellow-100
+            w-60
+            h-60
         }
     .heading {
         font-family: 'Mountains of Christmas', cursive;
         text-align: center;
         font-size: 56px;
-    }
-    .wrapper{
-        width: 100%;
-        border: 2px solid black;
-        background-color: #6495ED;
+        color: #DF1103;
     }
 }
 
