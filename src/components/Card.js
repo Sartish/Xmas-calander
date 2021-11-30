@@ -75,7 +75,7 @@ const Card = () => {
     return (
         <div className="background">
             {renderButtons()}
-            <Snowfall />
+            <Snowfall style={{ height: "100%" }} />
         </div>
     )
 }
