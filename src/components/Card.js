@@ -73,11 +73,13 @@ const Card = () => {
     }
 
     return (
-        <div className="background">
-            {renderButtons()}
-            <Snowfall style={{ height: "100%" }} />
-        </div>
+        <>
+            <div className="background">
+                {renderButtons()}
+                <Snowfall style={{ overflow: "scroll", height: "100vh" }} />
+            </div>
+
+        </>
     )
 }
-
 export default Card
