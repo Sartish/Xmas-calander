@@ -4,7 +4,7 @@ import React from 'react'
 const Heading = () => {
     return (
         <>
-            <h1 className="heading">Christmas Calander</h1>
+            <h1 className="heading">Christmas Calendar</h1>
             <h2>get your daily dev jokes</h2>
         </>
     )

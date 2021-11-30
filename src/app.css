@@ -40,7 +40,7 @@
         font-family: 'Mountains of Christmas', cursive;
         text-align: center;
         font-size: 56px;
-        color: #B3001B;
+        color: white;
     }
 }
 
@@ -48,7 +48,7 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Source Code Pro', monospace;
-    color: #B3001B;
+    color: white;
 }
 
 h3 {

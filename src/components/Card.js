@@ -8,9 +8,9 @@ import swal from 'sweetalert2';
 const Card = () => {
     const [data, setData] = useState([{ text: "Loading..." }])
     const [isFlipped, setIsFlipped] = useState(new Set())
-    let dateObj = new Date("2021.12.11");
+    let dateObj = new Date();
     let month = dateObj.getUTCMonth() + 1; //months from 1-12
-    let day = dateObj.getUTCDate() + 1
+    let day = dateObj.getUTCDate()
 
     useEffect(() => {
         fetch('https://rawgit.com/elijahmanor/cyberpun/master/jokes.json')
@@ -44,7 +44,7 @@ const Card = () => {
 
     const renderButtons = () => {
         return range(25).map(number => {
-            if (number == day && month == 12) {
+            if (number <= day && month == 12) {
                 return <ReactCardFlip isFlipped={isFlipped.has(number)} flipDirection="horizontal">
                     <button className="card" onClick={handleClick(number)}><h3>{number}</h3>
                     </button>
