@@ -56,7 +56,7 @@ const Card = () => {
                     <ReactCardFlip isFlipped={isFlipped.has(number)} flipDirection="horizontal">
                         <button className="card" onClick={() => {
                             new swal({
-                                text: 'Oh sneaky you! You you have to wait.',
+                                text: 'Oh sneaky you! You have to wait.',
                                 button: 'ok',
                                 imageUrl: 'https://media.giphy.com/media/D28t0Rto3daKI/giphy.gif'
 
