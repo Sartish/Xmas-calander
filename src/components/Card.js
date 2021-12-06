@@ -76,7 +76,7 @@ const Card = () => {
         <>
             <div className="background">
                 {renderButtons()}
-                <Snowfall style={{ overflow: "scroll", height: "100vh" }} />
+                <Snowfall />
             </div>
 
         </>
